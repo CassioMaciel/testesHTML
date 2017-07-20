@@ -1,0 +1,81 @@
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+  margin: 0 -35px;
+  background-color: #98272e;
+  position: relative;
+  font-size: 0;
+  /* Font awesome icons */
+  /* General menu link styling */
+  /* For when the menu becomes a sticky menu */
+}
+
+  .main-navigation ul li {
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+}
+.main-navigation ul li:hover > a {
+  background: #252525;
+  color: #ffffff;
+}
+.main-navigation ul li a {
+  padding: 20px 35px;
+  line-height: 1em;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main-navigation ul ul {
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  background: #98272e;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 99999;
+  /* Third Level Items */
+}
+.main-navigation ul ul a {
+    width: 270px;
+  padding: 15px 20px;
+border-bottom: 1px solid #fff;
+}
+.main-navigation ul ul li {
+  position: relative;
+  text-align: left;
+  /* Hovering over 2nd level items */
+}
+.main-navigation ul ul li:hover > a {
+  background: #252525;
+  color: #ffffff;
+}
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
+  margin-left: 0;
+}
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+text-transform: uppercase;
+  font-weight: bold;
+}
+.main-navigation.sticky:after {
+  bottom: -6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 6px 6px -6px inset;
+  content: "";
+  height: 6px;
+  position: absolute;
+  width: 100%;
+}
+body.has-menu-search .main-navigation ul {
+  margin-right: 59px;
+}

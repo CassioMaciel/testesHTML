@@ -1,0 +1,32 @@
+/*https://www.youtube.com/watch?v=FCLHS4A-Msw*/
+.main-navigation {
+    background-color: #98272e;
+}
+.main-navigation ul li{
+  list-style-type:none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 20px 35px;
+  position: relative;  
+}
+.main-navigation  li a{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  background: #98272e;
+  top: 100%;
+  left: 0;
+}
+.sub-menu a {
+  width: 270px;
+  border-bottom: 1px solid #fff;
+  text-decoration:none;
+}
+#menu-item-20:hover .sub-menu{
+display:block;}
